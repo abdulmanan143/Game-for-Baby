@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", system-ui, sans-serif;
+  --font-sans: "Nunito", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, .font-kid {
+  font-family: var(--font-display);
+}
+
+/* Tactile 3D button effect beloved in kids games */
+.btn-3d {
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-3d:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-3d-amber {
+  box-shadow: 0 6px 0 #b45309;
+}
+.btn-3d-amber:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #b45309;
+}
+
+.btn-3d-emerald {
+  box-shadow: 0 6px 0 #047857;
+}
+.btn-3d-emerald:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #047857;
+}
+
+.btn-3d-indigo {
+  box-shadow: 0 6px 0 #4338ca;
+}
+.btn-3d-indigo:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #4338ca;
+}
+
+.btn-3d-rose {
+  box-shadow: 0 6px 0 #be123c;
+}
+.btn-3d-rose:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #be123c;
+}
+
+.btn-3d-cyan {
+  box-shadow: 0 6px 0 #0e7490;
+}
+.btn-3d-cyan:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #0e7490;
+}
+
+.btn-3d-purple {
+  box-shadow: 0 6px 0 #6b21a8;
+}
+.btn-3d-purple:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #6b21a8;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2s ease-in-out infinite;
+}
+

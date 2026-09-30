@@ -1,0 +1,6 @@
+{
+  "name": "Smart Kids Learning Game",
+  "description": "A colorful, interactive, fun educational game for children ages 5–12 covering Mathematics, English Vocabulary, General Knowledge, Memory Match, Problem Solving, and Typing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
