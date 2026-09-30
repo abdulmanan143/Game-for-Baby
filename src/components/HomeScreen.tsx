@@ -4,6 +4,8 @@ import { CATEGORIES } from '../data/gameContent';
 import { AVATAR_OPTIONS } from '../data/rewardsData';
 import { sounds, speakText } from '../utils/soundEffects';
 import { Play, Sparkles, Trophy, Star, Award, Compass, Volume2, ShieldCheck, Heart } from 'lucide-react';
+import kidsLandscapeImg from '../assets/images/kids_game_landscape_1790792713878.jpg';
+import kidsMascotImg from '../assets/images/kids_mascot_owl_1790792690727.jpg';
 
 interface HomeScreenProps {
   difficulty: Difficulty;
@@ -49,7 +51,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         {/* Background decorative landscape scrim */}
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay">
           <img
-            src="/src/assets/images/kids_game_landscape_1790792713878.jpg"
+            src={kidsLandscapeImg}
             alt="Cartoon landscape"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -101,7 +103,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           <div className="relative shrink-0 flex flex-col items-center">
             <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-amber-200 animate-float">
               <img
-                src="/src/assets/images/kids_mascot_owl_1790792690727.jpg"
+                src={kidsMascotImg}
                 alt="Professor Owl Mascot"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

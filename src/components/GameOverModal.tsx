@@ -5,6 +5,7 @@ import { INITIAL_STICKERS } from '../data/rewardsData';
 import { sounds, speakText } from '../utils/soundEffects';
 import { Play, RotateCcw, Home, Trophy, Sparkles, Star } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import kidsStarTrophyImg from '../assets/images/kids_star_trophy_1790792701957.jpg';
 
 interface GameOverModalProps {
   category: CategoryId;
@@ -57,7 +58,7 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
         {/* Golden Trophy Hero Image */}
         <div className="relative mx-auto w-32 h-32 sm:w-36 sm:h-36 rounded-3xl overflow-hidden border-4 border-amber-400 shadow-xl bg-amber-100 animate-float">
           <img
-            src="/src/assets/images/kids_star_trophy_1790792701957.jpg"
+            src={kidsStarTrophyImg}
             alt="Gold Star Trophy"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
